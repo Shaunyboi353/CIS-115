@@ -34,9 +34,7 @@ public class M4HW1_beard
 
         // calculations
         netSold = widgetSold - returnedWid;
-        salesAmount = netSold * SALESPRICE;
-        commisAmount = commisRate * salesAmount;
-        salary = commisAmount + BASESAL;
+        
 
 
         // commission rate structure
@@ -48,6 +46,9 @@ public class M4HW1_beard
             commisRate = .2;
         else commisRate = .25;
         
+        salesAmount = netSold * SALESPRICE;
+        commisAmount = commisRate * salesAmount;
+        salary = commisAmount + BASESAL;
         // Output
 
         System.out.print("Net Widgets Sold: " + netSold);
